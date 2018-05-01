@@ -24,4 +24,4 @@ RUN apt-get update && \
 WORKDIR /vapor
 
 # Build and serve
-CMD bash -c "vapor build --release && vapor run serve --env=production --release"
+CMD bash -c "vapor build --release --verbose && vapor run serve --env=production --release"
